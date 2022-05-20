@@ -15,7 +15,7 @@ import {
 
 export default class App extends Component {
 
-  apiKey = a4a045a06fd74cf6bd1dce087b37f18b;
+  apiKey = "a4a045a06fd74cf6bd1dce087b37f18b";
       
   state={
     progress: 0
