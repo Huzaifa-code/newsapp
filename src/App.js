@@ -15,7 +15,7 @@ import {
 
 export default class App extends Component {
 
-  apiKey = process.env.REACT_APP_NEWS_API;
+  apiKey = a4a045a06fd74cf6bd1dce087b37f18b;
       
   state={
     progress: 0
