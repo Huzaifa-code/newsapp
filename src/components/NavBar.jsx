@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 // import './NavBar.css'
 import { Link } from 'react-router-dom'
 
-export class NavBar extends Component {
+const NavBar = () => {
 
-  render() {
+  
 
     const NavStyle = {
         backgroundColor: "#2d3436"
@@ -44,7 +44,7 @@ export class NavBar extends Component {
             </nav>
         </div>
     )
-  }
+  
 }
 
 export default NavBar

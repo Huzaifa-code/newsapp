@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styledComponents from 'styled-components';
 import styled from 'styled-components';
 
-export class NewsItem extends Component {
-  render() {
-    let {title, description, imageUrl, newsUrl, author, date} = this.props;
+const NewsItem = (props) => {
+  
+    let {title, description, imageUrl, newsUrl, author, date} = props;
     
     return (
 
@@ -19,8 +19,8 @@ export class NewsItem extends Component {
             </div>
         </div>
       </div>
-    )
-  }
+    );
+  
 }
 
 const ReadMore = styled.a`
