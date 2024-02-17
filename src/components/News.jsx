@@ -20,10 +20,7 @@ const News = (props) => {
     
     setLoading(true);
     let data = await fetch(url , {
-      method: 'GET',
-      headers: {
-          'HTTP2-Settings': 'AAMAAABkAARAAAAAAAIAAAAA'
-      }
+      method: 'GET'
     });
 
     props.setProgress(30);
@@ -66,10 +63,7 @@ const News = (props) => {
     // setLoading(true);
 
     let data = await fetch(url, {
-      method: 'GET',
-      headers: {
-          'HTTP2-Settings': 'AAMAAABkAARAAAAAAAIAAAAA'
-      }
+      method: 'GET'
     });
     let parsedData = await data.json()
 
