@@ -6,10 +6,8 @@ import News from './components/News';
 import LoadingBar from 'react-top-loading-bar';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Routes,
-  Link
 } from "react-router-dom";
 
 
