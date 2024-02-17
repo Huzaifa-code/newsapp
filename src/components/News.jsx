@@ -19,7 +19,12 @@ const News = (props) => {
     let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`
     
     setLoading(true);
-    let data = await fetch(url);
+    let data = await fetch(url , {
+      method: 'GET',
+      headers: {
+          'HTTP2-Settings': 'AAMAAABkAARAAAAAAAIAAAAA'
+      }
+    });
 
     props.setProgress(30);
     let parsedData = await data.json()
@@ -60,7 +65,12 @@ const News = (props) => {
     
     // setLoading(true);
 
-    let data = await fetch(url);
+    let data = await fetch(url, {
+      method: 'GET',
+      headers: {
+          'HTTP2-Settings': 'AAMAAABkAARAAAAAAAIAAAAA'
+      }
+    });
     let parsedData = await data.json()
 
     setArticles(articles.concat(parsedData.articles));
